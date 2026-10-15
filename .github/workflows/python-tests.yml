@@ -1,0 +1,31 @@
+
+name: Testes Automatizados Python
+
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    name: Executar testes Python
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v7
+
+      - name: Configurar o Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+
+      - name: Executar testes automatizados
+        run: python -m unittest discover -s tests -v
