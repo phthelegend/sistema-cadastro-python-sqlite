@@ -2,6 +2,8 @@
 
 Sistema CRUD desenvolvido em Python, com armazenamento persistente utilizando SQLite e testes automatizados.
 
+[![Testes Automatizados Python](https://github.com/phthelegend/sistema-cadastro-python-sqlite/actions/workflows/python-tests.yml/badge.svg)](https://github.com/phthelegend/sistema-cadastro-python-sqlite/actions/workflows/python-tests.yml)
+
 ## Funcionalidades
 
 - Cadastro de pessoas com nome e idade.
